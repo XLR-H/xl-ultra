@@ -20,7 +20,7 @@ body {
 }
 
 .main {
-    background-image: url("/img/img_earth01.png");
+    background-image: url("/img/img_earth01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -49,9 +49,9 @@ body {
 }
 
 .container__note {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--secundario);
-    text-shadow: 0 0 5px violet;
+    text-shadow: 0 0 10px rgba(255,0,255,0.7);
     /* margin: 0 0 1em 2em; */
 }
 
@@ -75,23 +75,24 @@ body {
 .container02 {
     align-items: center;
     margin: 64px 0;
+
 }
 
 .cont02img {
-    background-image: url(/img/_city01.jpg);
+    background-image: url(/img/img_city02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .cont03img {
-    background-image: url(/img/_nervous_system.jpg);
+    background-image: url(/img/img_nervous_system.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .cont04img {
-    background-image: url(/img/speed01.jpg);
+    background-image: url(/img/img_speed01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -112,14 +113,14 @@ body {
 .container02__descr__title {
     font-size: 48px;
     font-weight: 700;
-    text-shadow: 0px 0px 10px blueviolet;
+    text-shadow: 0px 0px 10px rgba(128,0,255,1);
 }
 
 .container02__descr__text {
     font-size: 24px;
     font-weight: 400;
     color: var(--texto);
-    text-shadow: 0px 0px 10px blueviolet;
+    text-shadow: 0px 0px 5px rgba(128,0,255,1);
 }
 
 .container__button02 {
@@ -209,10 +210,10 @@ footer__text */
     font-size: 14px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 430px) {
     .container__box {
-        margin: 24px;
-        width: 450px;
+        margin: 0;
+        width: 400px;
     }
 
     .principal {
@@ -223,16 +224,25 @@ footer__text */
     }
 
     .container {
-        margin: 24px;
-        width: 490px;
+        margin: 0x;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50% 50%;        
     }
 
+    .container02 {
+        padding: 24px 0;
+    }
+        
     .container02__descr {
         text-align: center;
+    }
+
+    .container02__image {
+        width: 70%;
+        margin: 12px 0;
     }
 
     .devices {
