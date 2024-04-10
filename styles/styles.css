@@ -210,6 +210,7 @@ footer__text */
 
 .footer__list__link a:hover {
     color: orange;
+    text-shadow: 0 0 10px yellow;
 }
 
 .footer__text {
@@ -218,20 +219,16 @@ footer__text */
     font-size: 14px;
 }
 
-@media (max-width: 430px) {
-    .main {
-        background-size: cover;
-        background-position: center;
-
-    }
-
+@media (max-width: 500px) {
     .container {
-        margin: 0;
-        width: 400px;
+        margin: 100px 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         grid-template-columns: 50% 50%;
+        background-size: cover;
+        background-position: center;
     }
 
     .principal {
@@ -247,6 +244,11 @@ footer__text */
 
     .container02__descr {
         text-align: center;
+    }
+
+    .container02__descr__text {
+        font-size: 36px;
+        text-shadow: 0 0 12px rgba(128, 0, 255, 1);
     }
 
     .container__image {
