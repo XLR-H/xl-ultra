@@ -7,11 +7,15 @@
 }
 
 body {
-    background-color: var(--fundo);
+    /* background-color: var(--fundo); */
     color: var(--texto);
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 400;
+}
+
+.body__black {
+    background-color: black;
 }
 
 * {
@@ -19,18 +23,41 @@ body {
     padding: 0;
 }
 
+
 .main {
-    background-image: url("/img/img_earth01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     align-items: center;
     text-align: center;
 }
 
 .container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    /* width: 1920px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.container__box {
+    margin: 0 48px;
+    /* background-color: red; */
+}
+
+.container__box__psy {
+    
+    margin: 48px;
+    /* background-color: red; */
+}
+
+.container__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 0 5px yellow, 2px 2px 5px black;
+}
+
+.container__title2 {
+    font-size: 24px;
+    font-weight: 200;
+    text-shadow: 0 0 5px red, 2px 2px 2px black;
+    text-align: justify;
 }
 
 .container__button {
@@ -59,13 +86,8 @@ body {
 .container__note {
     font-size: 16px;
     color: var(--secundario);
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    text-shadow: 0 0 5px red, 2px 2px 5px black;
     /* margin: 0 0 1em 2em; */
-}
-
-.container__title {
-    font-size: 36px;
-    font-weight: 700;
 }
 
 .container__image {
@@ -75,22 +97,24 @@ body {
     box-shadow: 0 0 24px yellow;
 }
 
-.container__box {
-    margin: 0 6em;
-    /* background-color: red; */
+.container__image__neuro {
+    margin: 64px;
+    width: 400px;
+    border-radius: 64px;
+    box-shadow: 0 0 24px yellow;
 }
 
-.container02 {
-    align-items: center;
-    margin: 64px 0;
-
+.cont01img {
+    background-image: url("/img/img_earth01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cont02img {
     background-image: url("/img/img_city02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
 
 .cont03img {
@@ -105,6 +129,19 @@ body {
     background-size: cover;
 }
 
+.cont__neuro__img {
+    background-image: url("/img/img_nervous_system.jpg"), radial-gradient(red,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.container02 {
+    align-items: center;
+    text-align: center;
+    margin: 64px 0;
+}
+
 .container02__image {
     width: 400px;
     margin: 0 3em 0 3em;
@@ -113,22 +150,23 @@ body {
 }
 
 .container02__descr {
-    /* background-color: purple; */
     margin: 32px;
+    align-items: center;
+    /* background-color: rgba(255, 0, 128, 0.2); */
 
 }
 
 .container02__descr__title {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 700;
-    text-shadow: 0px 0px 10px rgba(128, 0, 255, 1);
+    text-shadow: 0 0 5px red, 5px 5px 10px black;
 }
 
 .container02__descr__text {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 400;
     color: var(--texto);
-    text-shadow: 0px 0px 5px rgba(128, 0, 255, 1);
+    text-shadow: 0 0 5px red, 2px 2px 5px black;
 }
 
 .container__button02 {
@@ -219,6 +257,68 @@ footer__text */
     font-size: 14px;
 }
 
+.pay__header {
+    margin: 24px 24px;
+    border: 2px solid white;
+    width: 124px;
+    text-align: center;
+}
+
+.pay__header:hover {
+
+    box-shadow: 0 0 10px orange;
+}
+
+
+.pay__back {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.not__found {
+    font-size: 24px;
+    margin: 24px;
+}
+
+.quiz__body {
+    font-size: 24px;
+    background-image: url("/img/img_earth02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.quiz__header {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    /* background-color: blue; */
+}
+
+.quiz__p {
+    text-shadow: 2px 2px 5px black, 0 0 5px red;
+
+}
+
+.quiz__a {
+    text-decoration: none;
+    color: white;
+    margin: 12px;
+    padding: 16px;
+    border: 2px solid white;
+    text-shadow: 0 0 5px black;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.quiz__a:hover {
+    box-shadow: 0 0 50px yellow;
+    background-color: rgba(255, 255, 0, 0.5);
+
+}
+
 @media (max-width: 500px) {
     .container {
         margin: 100px 0;
@@ -229,6 +329,15 @@ footer__text */
         grid-template-columns: 50% 50%;
         background-size: cover;
         background-position: center;
+    }
+
+    .container__title {
+        font-size: 32px;
+    }
+
+    .container__title2 {
+        font-size: 16px;
+
     }
 
     .principal {
@@ -248,12 +357,24 @@ footer__text */
 
     .container02__descr__text {
         font-size: 36px;
-        text-shadow: 0 0 12px rgba(128, 0, 255, 1);
     }
 
     .container__image {
         width: 300px;
         margin: 24px;
+    }
+
+    .container__image__neuro {
+        margin: 24px;
+        width: 300px;
+        border-radius: 64px;
+        box-shadow: 0 0 24px yellow;
+    }
+
+    .cont__neuro__img {
+        background-repeat: repeat;
+        background-size: contain;
+        background-blend-mode: multiply;
     }
 
     .container02__image {
@@ -297,7 +418,7 @@ footer__text */
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin: 35em 0 5em 0;
     }
 
     .footer__logo {
