@@ -1,7 +1,7 @@
 :root {
     --texto: #ffffff;
     --secundario: #c0c0c0;
-    --botao-azul: #167bf7;
+    --botao-azul: rgba(0,128,255,0.5);
     --fundo: black;
     --font-main: 'Orbit', sans-serif;
 }
@@ -12,10 +12,6 @@ body {
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 400;
-}
-
-.body__black {
-    background-color: black;
 }
 
 * {
@@ -34,6 +30,7 @@ body {
     /* width: 1920px; */
     display: flex;
     flex-direction: row;
+    
 }
 
 .container__box {
@@ -42,7 +39,6 @@ body {
 }
 
 .container__box__psy {
-    
     margin: 48px;
     /* background-color: red; */
 }
@@ -67,14 +63,11 @@ body {
     color: var(--texto);
     display: block;
     text-decoration: none;
-    margin-bottom: 1em;
+    margin: 1em;
+    width: 300px;
 }
 
 .container__button:hover {
-    box-shadow: 0 0 20px orange;
-}
-
-.container__button02:hover {
     box-shadow: 0 0 20px orange;
 }
 
@@ -114,7 +107,7 @@ body {
     background-image: url("/img/img_city02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .cont03img {
@@ -129,8 +122,23 @@ body {
     background-size: cover;
 }
 
-.cont__neuro__img {
-    background-image: url("/img/img_nervous_system.jpg"), radial-gradient(red,blue);
+.back__img__neuro {
+    margin: 36px 12px;
+    background-image: url("/img/img_nervous_system.jpg"), radial-gradient(red, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.back__img__super {
+    background-image: url("/img/img_speed01.jpg"), linear-gradient(white, red, black, black);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+}
+
+.back__img__giga {
+    background-image: url("/img/img_psy_giga2.jpg"), linear-gradient(white, #30f);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
@@ -167,18 +175,6 @@ body {
     font-weight: 400;
     color: var(--texto);
     text-shadow: 0 0 5px red, 2px 2px 5px black;
-}
-
-.container__button02 {
-    display: block;
-    margin: 1em 0 0 0;
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--texto);
-    text-decoration: none;
-    margin-bottom: 1em;
-    width: fit-content;
 }
 
 .devices {
@@ -269,7 +265,6 @@ footer__text */
     box-shadow: 0 0 10px orange;
 }
 
-
 .pay__back {
     color: white;
     text-decoration: none;
@@ -284,12 +279,13 @@ footer__text */
 
 .quiz__body {
     font-size: 24px;
-    background-image: url("/img/img_earth02.jpg");
+    height: 100vh;
+    background-image: url(/img/img_earth02.jpg), linear-gradient(white, black);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-}
+    }
 
 .quiz__header {
     display: flex;
@@ -317,6 +313,17 @@ footer__text */
     box-shadow: 0 0 50px yellow;
     background-color: rgba(255, 255, 0, 0.5);
 
+}
+
+.redacted {
+    color: black;
+    background-color: black;
+    text-shadow: none;
+    width: 200px;
+}
+
+.pay__body {
+    background-color: black;
 }
 
 @media (max-width: 500px) {
@@ -371,10 +378,22 @@ footer__text */
         box-shadow: 0 0 24px yellow;
     }
 
-    .cont__neuro__img {
+    .back__img__neuro {
         background-repeat: repeat;
         background-size: contain;
         background-blend-mode: multiply;
+    }
+
+    .back__img__super {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .back__img__giga {
+        background-image: url(/img/img_psy_giga3.jpg), linear-gradient(white, #30f);;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .container02__image {
@@ -436,7 +455,5 @@ footer__text */
         background-color: red;
     } */
 
-
-
-
+    
 }
