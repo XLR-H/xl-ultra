@@ -39,7 +39,6 @@ body {
 }
 
 .container__psy {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,14 +50,14 @@ body {
 
 .container__box__psy {
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
     margin: 24px 24px;
-    padding: 24px;
+    /* padding: 24px; */
     gap: 12px;
     /* background-color: red; */
+}
+
+.str01 {
+    text-shadow: -5px 5px 10px #08f, 5px -5px 10px #f80, -5px -5px 10px #8f0, 5px 5px 10px #f08;
 }
 
 .container__title {
@@ -162,7 +161,7 @@ body {
 
 .back__img__neuro {
     margin: 36px 12px;
-    background-image: url("/img/img_nervous_system.jpg"), radial-gradient(red, blue);
+    background-image: url("/img/img_nervous_system.jpg"), linear-gradient(white, blue);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
@@ -309,8 +308,9 @@ footer__text */
 .quiz__body {
     font-size: 24px;
     height: 100vh;
-    background-image: url(/img/img_earth02.jpg);
-    /* background-blend-mode: screen; */
+    /* background-color: black; */
+    background-image: url(/img/img_earth02.jpg), linear-gradient(white, black);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,8 +325,7 @@ footer__text */
 
 .quiz__p {
     text-shadow: 2px 2px 5px black, 0 0 5px red;
-
-}
+    }
 
 .quiz__a {
     text-decoration: none;
@@ -341,7 +340,6 @@ footer__text */
 .quiz__a:hover {
     box-shadow: 0 0 50px yellow;
     background-color: rgba(255, 255, 0, 0.5);
-
 }
 
 .redacted {
@@ -361,7 +359,7 @@ footer__text */
     }
 
     .container__psy {
-        width: 80%;
+        
     }
 
     .container__title {
@@ -439,6 +437,16 @@ footer__text */
         background-repeat: no-repeat;
     }
 
+    .quiz__body {
+        height: fit-content;
+    }
+
+    .quiz__p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
     .devices {
         text-align: center;
         margin: 3em 0;
