@@ -161,7 +161,7 @@ body {
 
 .back__img__neuro {
     margin: 36px 12px;
-    background-image: url("/img/img_nervous_system.jpg"), linear-gradient(white, blue);
+    background-image: url("/img/img_nervous_system.jpg"), linear-gradient(white, AQUA);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
